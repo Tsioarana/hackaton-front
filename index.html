@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malagasy Tsara Vokatra</title>
+  <meta name="title" content="Grilli - Amazing & Delicious Food">
+  <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+  <link rel="shortcut icon" href="./assets/images/logoAgriculture.png" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <style>
+    
+   
+      
+      footer{
+                position: relative;
+                width: 100%;
+                min-height: 2 00px;
+                padding: 20px 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+      }
+      footer .social_icon, footer .menu{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+                flex-wrap: wrap;
+      }
+      footer .social_icon li, footer .menu li{
+                list-style: none;
+      }
+      footer .social_icon li a{
+                margin: 0 10px;
+                display: inline-block;
+                transition: 0.5s;
+      }
+      footer .social_icon li a:hover{
+                transform: translateY(-10px);
+      }
+      footer .menu li a{
+                font-size: 1.2em;
+                color: #fff;
+                margin: 0 10px;
+                display: inline-block;text-decoration: none;
+                opacity: 0.75;
+      }
+      footer .menu li a:hover{
+                opacity: 1;
+
+      }
+      footer p{
+                color: #fff;
+                text-align: center;
+                margin-top: 15px;
+                margin-bottom: 10px;
+                font-size: 1.1em;
+      }
+      footer .wave{
+                position: absolute;
+                top: -100px;
+                left: 0;
+                width: 100%;
+                height: 100px;
+                background: red;
+                background-size: 1000px 100px;
+      }
+      footer .wave#wave1{
+                z-index: 1000;
+                opacity: 0;
+                bottom: 0;
+                animation: animateWave 4s linear infinite;
+      }
+      footer .wave#wave1{
+                z-index: 999;
+                opacity: 0.5;
+                bottom: 10px;
+                animation: animateWave_02 4s linear infinite;
+      }
+      footer .wave#wave3{
+                z-index: 1000;
+                opacity: 0.2;
+                bottom: 15;
+                animation: animateWave 3s linear infinite;
+      }
+      footer .wave#wave4{
+                z-index: 999;
+                opacity: 0.7;
+                bottom: 10px;
+                animation: animateWave_02 3s linear infinite;
+      }
+      @keyframes animateWave {
+                0%{
+                          background-position-X: 1000px;
+                }
+                100%{
+                          background-position-X: 0px;
+                }
+      }
+      @keyframes animateWave_02 {
+                0%{
+                          background-position-X: 0px;
+                }
+                100%{
+                          background-position-X: 1000px;
+                }
+      }
+
+      .parallax-footer {
+                position: relative;
+                overflow: hidden;
+            }
+    
+            .parallax-background {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url(image/393110008_321603757380012_7513388869926479506_n.jpg) center/cover no-repeat fixed;
+                transform: translateZ(-1px) scale(1.5);
+                z-index: -1;
+            }
+          
+  </style>
+  
+</head>
+<body id="top">
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+  </div>
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logoAgriculture.png" width="160" height="50" alt="Grilli - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logoAgriculture.png" width="160" height="50" alt="Grilli - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Accueil</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#site" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Notre site</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">A propos de nous</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Nos blog</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contact</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      <a href="pratiques.html" class="btn btn-secondary">
+        <span class="text text-1">Gestion</span>
+
+        <span class="text text-2" aria-hidden="true">Gestion</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+  <main>
+    <article>
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <video src="./assets/images/planete.mov" width="1880" height="950" class="img-cover" style="filter: brightness(50%);" autoplay>
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Agriculture intelligente</p>
+
+            <h1 class="display-1 hero-title slider-reveal" style="font-size: 7rem">
+              Prévision des <br>
+               rendements
+            </h1>
+
+
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <video src="./assets/images/pratiquesagricoles2.mp4" width="1880" height="950" alt="" class="img-cover" style="filter: brightness(50%);" autoplay muted>
+              </video>
+              
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Agriculture intelligente</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Détection des <br>
+              maladies des plantes
+            </h1>
+
+
+
+          </li>
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+      </section>
+      <section id="site" class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Nos objectifs principaux</p>
+
+          <h2 class="headline-1 section-title">Nous fournissons des informations sur les pratiques agricoles intelligentes</h2>
+
+          <p class="section-text">
+            L'objectif principal de l'agriculture intelligente est 
+            d'utiliser les technologies et les pratiques innovantes 
+            pour améliorer l'efficacité, la durabilité et la productivité 
+            de l'agriculture, 
+            tout en minimisant les impacts environnementaux.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/Agriculture-connectée.jpeg" width="285" height="336" loading="lazy" alt="Breakfast"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Pratiques agricoles</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">Voir Plus</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/robot-effectuant-travail-humain.jpg" width="285" height="336" loading="lazy" alt="Appetizers"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Gestion des cultures</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">Voir Plus</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/expert.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Preventions des maladies</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">Voir Plus</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">A propos de nous</p>
+
+            <h2 class="headline-1 section-title">Chaque problème a son propre solution</h2>
+
+            <p class="section-text">
+             On est ici pour promouvoir les solutions 
+             et les produits liés à l'agriculture intelligente.
+            </p>
+
+  
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/ferme.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/fille-sourit.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+
+          </figure>
+
+          <img src="./assets/images/403606959_1127052558670479_5182540596141761288_n.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+      
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">Pourquoi cette idée</p>
+
+          <h2 class="headline-1 section-title">Des exemples</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/387518194_658922886413918_4329180643836692368_n.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+    
+              </div>
+            </li>
+
+         
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/387483092_734642721456489_7662197800682971467_n.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/387494345_1705797269909372_6073893662467785439_n.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+             
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/387508240_365801589188379_7206950484911205583_n.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+      
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/403606959_1127052558670479_5182540596141761288_n.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/403606959_1127052558670479_5182540596141761288_n.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/citation.jpg'); filter: brightness(50%);" aria-label="testimonials" >
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            L'agriculture intelligente est une pratique agricole adaptée qui contribue à la réalisation
+            des objectifs de développement durable.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/OIP.jpg" width="100" height="100" loading="lazy" alt="ISO"
+              class="img">
+
+            <p class="label-2 profile-name">Organisation internationale de normalisation <br>
+              ISO</p>
+          </div>
+
+        </div>
+      </section>
+
+
+      <section id="blog" class="section event bg-black-10" aria-label="event">
+        <div class="container">
+
+
+          <h2 class="section-title headline-1 text-center">NOS BLOG</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/OIP (1).jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-15">15/09/2023</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Lorem, ipsum dolor sit amet.</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/R.jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-08">08/09/2023</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Smart Agriculture</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/R (1).jpg" width="350" height="450" loading="lazy"
+                    alt="Flavour so good you’ll try to eat with your eyes." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-03">03/09/2023</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Environnement</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">Voir d'autres blog</span>
+            <span class="text text-2" aria-hidden="true">Voir d'autres blog</span>
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+  <footer class="parallax-footer">
+    <div class="parallax-background"></div>
+    <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social_icon">
+              <li><a href=""><img src="./assets/images/Fichier 3@5è.png" alt="" width="20px"></a></li>
+              <li><a href=""><img src="./assets/images/Fichier 4@5è.png" alt="" width="20px"></a></li>
+              <li><a href=""><img src="./assets/images/Fichier 5@5è.png" alt="" width="20px"></a></li>
+              <li><a href=""><img src="./assets/images/Fichier 6@5è.png" alt="" width="12px"></a></li>
+    </ul>
+    <ul class="menu">
+              <li><a href="">Accueil</a></li>
+              <li><a href="">Service</a></li>
+              <li><a href="">A propos</a></li>
+              <li><a href="">Contact</a></li>
+    </ul>
+    <p>&copy; 2023 Gestion des L'agriculture Intelligent</p>
+</footer>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
